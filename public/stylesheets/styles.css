@@ -1,0 +1,33 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+#card {
+  margin:20px;
+  min-width:200px;
+}
+
+
+.finished-task {
+  text-decoration: line-through !important;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  #card {
+    font-size:7px;
+    margin:0px;
+    width:100vw;
+    height:100vh;
+  }
+  #addInput {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1030; 
+  }
+}

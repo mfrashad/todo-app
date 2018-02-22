@@ -1,0 +1,63 @@
+<head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+<link rel="stylesheet" href="css/bootstrap-material-design.min.css">
+<link rel="stylesheet" href="stylesheets/styles.css">
+<script src="jquery.min.js"></script>
+<script src="js/bootstrap-material-design.min.js"></script>
+</head>
+<body>
+  
+<!--nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+    <button class="btn btn-outline-success my-2 my-sm-0">Login</button>
+  </div>
+</nav-->
+
+<div class="d-flex justify-content-center align-items-center">
+<div id="card" class="card text-center">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Todo List</a>
+    <ul class="navbar-nav mr-auto">
+      <!--li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li-->
+    </ul>
+    <button class="btn btn-outline-primary my-2 my-sm-0">Login</button>
+  </nav>
+  <div class="card-body p-2 text-center">
+    <h2 class="card-title m-2">Your Tasks</h4>
+    <div class="m-0">
+          <div id="taskList" class="list-group">
+             <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+               <div class="d-flex w-100 justify-content-between">
+                 <h5 class="mb-1 task-text">Todo Task1</h5>
+                 <button class="close">&times;</button>
+               </div>
+             </a>
+             
+          </div>
+          <div id="addInput" class="input-group mb-3 p-2">
+              <input id="inputTask" type="text" class="form-control w-75" placeholder="Add Task" aria-label="Add Task" aria-describedby="basic-addon2">
+            
+            <button id="addButton" type="button" class="btn btn-primary bmd-btn-fab bmd-btn-fab-sm">
+              +
+            </button>
+          </div>
+        </div>
+    </div>
+
+  </div>
+</div>
+</div>
+</body>
+<script src="javascripts/index.js"></script>
