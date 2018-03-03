@@ -30,11 +30,12 @@ a {
     margin:0px;
     width:100vw;
     min-height:100vh;
+    padding-bottom:0px;
   }
   #addInput {
     position: fixed;
     right: 0;
-    bottom: 0;
+    bottom: -20px;
     left: 0;
     z-index: 1030; 
   }
