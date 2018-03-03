@@ -33,12 +33,12 @@ function addButtonHandler(event){
   event.preventDefault();
   var text = $("#inputTask").val();
   addTask(text);
-  $.post('/api/addTask',{task:text,finished:false});
+  
 }
 
 function addTask(text){
   
-  if(text==="" && text){
+  if(text==="" || !text){
     return;
   }
   var element = "";
@@ -54,6 +54,7 @@ function addTask(text){
   console.log(text);
   $("#taskList .close").click(removeTask);
   $(element).click(finishTask);
+  $.post('/api/addTask',{task:text,finished:false});
 
 };
 
