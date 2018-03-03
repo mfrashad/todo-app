@@ -11,7 +11,9 @@ a {
   width:400px;
 }
 
-
+#navbar {
+  min-height: 40px;
+}
 
 .finished-task {
   text-decoration: line-through !important;
