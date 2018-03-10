@@ -1,6 +1,7 @@
 var passport = require('passport');
 var GoogleStrategy = require('passport-google-oauth').OAuth2Strategy;
 var User = require('../models/userModel');
+var callBackURL = process.env.NODE_ENV=='production'?'https://mfrashad-todo-app.herokuapp.com/auth/google/callback':'https://tolocalhost.com/auth/google/callback';
 
 module.exports = function(app){
   passport.serializeUser(function(user,done){
@@ -14,7 +15,8 @@ module.exports = function(app){
     clientID:process.env.GOOGLE_CLIENT_ID,
     
     clientSecret:process.env.GOOGLE_CLIENT_SECRET,
-    callbackURL:'https://mfrashad-todo-app.herokuapp.com/auth/google/callback'},
+    callbackURL:callBackURL
+  },
     function(token,refreshToken,profile,done){
       
       var query = {'google.id':profile.id};
