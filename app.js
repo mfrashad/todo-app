@@ -49,7 +49,7 @@ app.use(cookieParser());
 
 if(reactBuild){
   console.log('react build: '+reactBuild);
-  app.use(express.static(path.join(__dirname, 'client/build'));
+  app.use(express.static(path.join(__dirname, 'client/build')));
 }
 
 
