@@ -48,7 +48,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 
 if(reactBuild){
-  app.use(express.static('client/build'));
+  console.log('react build: '+reactBuild);
+  app.use(express.static(path.join(__dirname, 'client/build'));
 }
 
 
@@ -75,7 +76,7 @@ app.use(function(err, req, res, next) {
 
   // render the error page
   res.status(err.status || 500);
-  res.render('error');
+  res.send('error');
 });
 
 
