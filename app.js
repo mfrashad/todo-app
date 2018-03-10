@@ -18,8 +18,8 @@ var db = mongoose.connect(process.env.MONGOLAB_URI);
 
 
 
-var index = require('./routes/index');
-var users = require('./routes/users');
+//var index = require('./routes/index');
+//var users = require('./routes/users');
 var auth = require('./routes/auth');
 var api = require('./routes/api');
 
@@ -56,7 +56,7 @@ if(reactBuild){
 //app.use(express.static(path.join(__dirname, 'public')));
 //app.use(express.static(path.join(__dirname, 'node_modules/bootstrap-material-design/dist')));
 //app.use(express.static(path.join(__dirname, 'node_modules/jquery/dist')));
-app.use('/users', users);
+//app.use('/users', users);
 app.use('/auth', auth);
 app.use('/api',api);
 
